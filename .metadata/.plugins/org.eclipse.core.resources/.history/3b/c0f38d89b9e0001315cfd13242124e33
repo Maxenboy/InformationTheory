@@ -1,0 +1,9 @@
+package Hamming;
+
+import java.util.ArrayList;
+
+public class minimumDistance {
+public static void main(String[]args){
+	ArrayList<String> first=new ArrayList<String>();
+}
+}

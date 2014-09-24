@@ -1,0 +1,36 @@
+package Hamming;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+
+public class doubleError {
+	public static void main(String[] args) {
+		String[] otherList = new String[] { "10000001", "10000010", 
+				"10000100",	"10001000", "10010000", "10100000",
+				"11000000", "01000001",	"01000010", "01000100",
+				"01001000", "01010000", "01100000",	"00100001",
+				"00100010", "00100100", "00101000", "00110000",
+				"00010001", "00010010", "00010100", "00011000",
+				"00001001",	"00001010", "00001100", "00000101",
+				"00000110", "00000011" };
+		ArrayList<String> errors = new ArrayList<String>();
+		errors.addAll(Arrays.asList(otherList));
+		char[]  code="01101001".toCharArray();;
+		ArrayList<Integer> Y = new ArrayList<Integer>();
+		ArrayList<String> HT =new ArrayList<String>();
+		HT.add("10101010");
+		HT.add("01010101");
+		HT.add("00110011");
+		HT.add("00001111");
+		for(String s:errors){
+			char[] error = s.toCharArray();
+			for(int i = 0;i<error.length;i++){
+				int count =(error[i]+code[i])%2;
+				
+			}
+			
+			
+		}
+		
+	}
+}
